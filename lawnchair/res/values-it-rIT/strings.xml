@@ -47,8 +47,12 @@
     <string name="font_picker_description">Alcuni testi rimangono invariati.</string>
     <string name="smartspace_calendar_label">Personalizzazione del calendario nel widget At a Glance</string>
     <string name="smartspace_calendar_description">Consente di visualizzare la data nei sistemi di calendario non gregoriani.</string>
-    <string name="workspace_increase_max_grid_size_label">Increased Max Home Screen Grid Size</string>
-    <string name="workspace_increase_max_grid_size_description">Increase the max allowed Home Screen grid size from 10 x 10 to 20 x 20.</string>
+    <string name="workspace_increase_max_grid_size_label">Aumentata Dimensione Massima Della Griglia Delle Schermo Iniziale</string>
+    <string name="workspace_increase_max_grid_size_description">Aumenta la dimensione massima consentita della griglia della schermata home da 10 x 10 a 20 x 20.</string>
+    <string name="always_reload_icons_label">Ricarica sempre le icone</string>
+    <string name="always_reload_icons_description">Evita di utilizzare icone dalla cache dai pacchetti d\'icone</string>
+    <string name="transparent_background_icons">Transparent Themed Icons</string>
+    <string name="transparent_background_icons_description">Use transparent background on themed icons</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotazione schermata home</string>
     <string name="home_screen_rotaton_description">Quando il dispositivo viene ruotato.</string>
@@ -56,14 +60,17 @@
     <!-- <string name="icons" /> -->
     <string name="icon_style">Stile delle icone</string>
     <string name="icon_shape_label">Forma dell\'icona</string>
-    <string name="auto_adaptive_icons_label">Icone adattive automatiche</string>
+    <string name="auto_adaptive_icons_label">Icone auto-adattive</string>
     <string name="auto_adaptive_icons_description">Per tutte le icone non adattive.</string>
     <string name="background_lightness_label">Luminosità sfondo</string>
     <string name="adaptive_icon_background_description">Usa la luminosità dello sfondo al 100% per il bianco.</string>
     <string name="notification_dots">Badge di notifica</string>
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Mostra conteggio notifiche</string>
-    <string name="notification_dots_color">Notification Dot Color</string>
+    <string name="notification_dots_color">Colore badge di notifica</string>
+    <string name="notification_dots_text_color">Colore badge di notifica</string>
+    <string name="notification_dots_color_contrast_warning_always">Attenzione: Notification Dot &amp; I colori del contatore non hanno un contrasto sufficiente tra loro</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Attenzione: Notification Dot &amp; I colori del contatore potrebbero non avere sempre un contrasto sufficiente tra loro</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Accesso alle notifiche necessario</string>
     <string name="missing_notification_access_description">Accesso alle notifiche necessario.</string>
@@ -76,6 +83,19 @@
     <string name="theme_system_default">Sistema</string>
     <string name="theme_follow_wallpaper">Abbina allo sfondo</string>
     <string name="accent_color">Colore primario</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Custom Icon Shape</string>
+    <string name="custom_icon_shape_create">Create Custom Icon Shape</string>
+    <string name="custom_icon_shape_edit">Edit Custom Icon Shape</string>
+    <string name="icon_shape_corner">Corner Shape</string>
+    <string name="icon_shape_corner_round">Round</string>
+    <string name="icon_shape_corner_squircle">Smooth</string>
+    <string name="icon_shape_corner_cut">Cut</string>
+    <string name="icon_shape_top_left">Top Left</string>
+    <string name="icon_shape_top_right">Top Right</string>
+    <string name="icon_shape_bottom_left">Bottom Left</string>
+    <string name="icon_shape_bottom_right">Bottom Right</string>
+    <string name="create">Crea</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Pacchetto icone</string>
@@ -91,13 +111,13 @@
     <string name="icon_shape_system">Sistema</string>
     <string name="icon_shape_circle">Cerchio</string>
     <string name="icon_shape_cylinder">Cilindro</string>
-    <string name="icon_shape_diamond">Diamond</string>
-    <string name="icon_shape_egg">Egg</string>
+    <string name="icon_shape_diamond">Diamante</string>
+    <string name="icon_shape_egg">Uovo</string>
     <string name="icon_shape_cupertino">iOS</string>
-    <string name="icon_shape_octagon">Octagon</string>
+    <string name="icon_shape_octagon">Ottagono</string>
     <string name="icon_shape_sammy">One UI</string>
     <string name="icon_shape_rounded_square">Quadrato arrotondato</string>
-    <string name="icon_shape_sharp_square">Sharp Square</string>
+    <string name="icon_shape_sharp_square">Quadrato Perfetto</string>
     <string name="icon_shape_square">Quadrato</string>
     <string name="icon_shape_squircle">Supercerchio</string>
     <string name="icon_shape_teardrop">Goccia</string>
@@ -118,6 +138,7 @@
     <string name="reset_font">Reset</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dinamico</string>
+    <string name="swatches">Campioni</string>
     <string name="presets">Preset</string>
     <string name="custom">Personalizzato</string>
     <string name="rgb">RGB</string>
@@ -131,10 +152,10 @@
     <string name="hex">Hex</string>
     <string name="color_sliders">Cursori</string>
     <string name="action_copy">Copia</string>
-    <string name="action_paste">Paste</string>
+    <string name="action_paste">Incolla</string>
     <string name="copied_toast">Copiato negli appunti.</string>
     <string name="invalid_color">Colore non valido</string>
-    <string name="app_icon_color">App Icon Color</string>
+    <string name="launcher_default_color">Gestito da Lawnchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Aggiungi le nuove applicazioni alla schermata home</string>
@@ -149,11 +170,11 @@
     <string name="layout">Layout</string>
     <string name="home_screen_grid">Griglia della schermata home</string>
     <string name="home_screen_lock">Blocca la schermata home</string>
-    <string name="home_screen_lock_description">Prevents changes to the home screen layout.</string>
+    <string name="home_screen_lock_description">Previene modifiche al layout della schermata home.</string>
     <string name="home_screen_unlock">Sblocca schermata home</string>
     <!-- used in popup menu-->
     <string name="home_screen_lock_toggle_from_home_popup">Mostra pulsante di blocco nel pop-up</string>
-    <string name="home_screen_locked">Home Screen is locked.</string>
+    <string name="home_screen_locked">La schermata home è bloccata.</string>
     <string name="status_bar_label">Barra di stato</string>
     <string name="show_status_bar">Mostra barra di stato</string>
     <string name="dark_status_bar_label">Barra di stato scura</string>
@@ -162,7 +183,7 @@
     <string name="show_home_labels">Mostra etichette</string>
     <string name="label_size">Dimensioni etichetta</string>
     <string name="reset_custom_icons">Resetta icone personalizzate</string>
-    <string name="reset_custom_icons_confirmation">Tutte le icone personalizzate saranno resettate? Vuoi continuare?</string>
+    <string name="reset_custom_icons_confirmation">Tutte le icone personalizzate saranno resettate. Vuoi continuare?</string>
     <!-- <string name="widget_button_text" /> (unknown source)-->
     <string name="force_rounded_widgets">Angoli arrotondati</string>
     <string name="allow_widget_overlap">Consenti sovrapposizione</string>
@@ -186,9 +207,9 @@
     <string name="smartspace_date_and_time">Data &amp; ora</string>
     <string name="smartspace_date">Data</string>
     <string name="smartspace_time">Ora</string>
-    <string name="smartspace_time_format">Time Format</string>
+    <string name="smartspace_time_format">Formato orario</string>
     <string name="smartspace_time_follow_system">Segui il sistema</string>
-    <string name="smartspace_time_12_hour_format">12-Hour Format</string>
+    <string name="smartspace_time_12_hour_format">Formato 12 ore</string>
     <string name="smartspace_time_24_hour_format">Formato 24 ore</string>
     <string name="smartspace_weather">Meteo</string>
     <string name="smartspace_battery_status">Stato batteria</string>
@@ -199,8 +220,8 @@
     <string name="smartspace_calendar_gregorian">Gregoriano</string>
     <string name="smartspace_calendar_persian">Persiano</string>
     <string name="smartspace_preferences">Preferenze</string>
-    <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added by placing the \"Lawnchair\" widget.</string>
+    <string name="smartspace_widget_toggle_label">Mostra nella schermata home</string>
+    <string name="smartspace_widget_toggle_description">Il widget At a Glance può essere aggiunto manualmente posizionando il widget \"Lawnchair\".</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
     <string name="search_bar_label">Barra di ricerca</string>
@@ -219,8 +240,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">App nascoste</string>
     <string name="background_opacity">Opacità dello sfondo</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">App nascoste</string>
+    <string name="show_enable_smart_hide">Mostra quando viene digitato il nome completo</string>
+    <string name="hide_hidden_apps_search">Escludi dai risultati di ricerca</string>
     <string name="pref_category_search">Ricerca</string>
     <string name="show_app_search_bar">Mostra la Barra di Ricerca</string>
     <string name="pref_search_auto_show_keyboard">Mostra la tastiera automaticamente</string>
@@ -245,6 +269,7 @@
     <!-- <string name="folders_label" /> -->
     <!-- <string name="general_label" /> -->
     <string name="folder_preview_bg_opacity_label">Opacità sfondo dell\'icona</string>
+    <string name="folder_preview_bg_color_label">Colore dello sfondo dell\'icona</string>
     <!-- <string name="grid" /> -->
     <string name="max_folder_columns">Colonne massime per la cartella</string>
     <string name="max_folder_rows">Righe massime per la cartella</string>

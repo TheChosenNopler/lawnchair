@@ -47,8 +47,12 @@
     <string name="font_picker_description">部分文本保持不变。</string>
     <string name="smartspace_calendar_label">资讯一览日历自定义</string>
     <string name="smartspace_calendar_description">允许显示非公历日期</string>
-    <string name="workspace_increase_max_grid_size_label">Increased Max Home Screen Grid Size</string>
-    <string name="workspace_increase_max_grid_size_description">Increase the max allowed Home Screen grid size from 10 x 10 to 20 x 20.</string>
+    <string name="workspace_increase_max_grid_size_label">提高主屏幕最大网格大小</string>
+    <string name="workspace_increase_max_grid_size_description">将最大允许的主屏幕网格大小从10 x 10增加到20x 20。</string>
+    <string name="always_reload_icons_label">总是重新加载图标</string>
+    <string name="always_reload_icons_description">避免在图标包中使用缓存图标</string>
+    <string name="transparent_background_icons">透明的主题图标</string>
+    <string name="transparent_background_icons_description">在主题图标上使用透明背景</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">主屏幕旋转</string>
     <string name="home_screen_rotaton_description">当设备旋转时</string>
@@ -64,6 +68,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">显示通知计数</string>
     <string name="notification_dots_color">通知圆点颜色</string>
+    <string name="notification_dots_text_color">通知计数颜色</string>
+    <string name="notification_dots_color_contrast_warning_always">警告: 通知点 &amp; 计数器颜色之间没有足够的对比度</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">警告: 通知点 &amp; 计数器颜色可能不总是有足够的对比度</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">需要通知权限</string>
     <string name="missing_notification_access_description">需要通知权限。</string>
@@ -76,6 +83,19 @@
     <string name="theme_system_default">系统</string>
     <string name="theme_follow_wallpaper">匹配壁纸</string>
     <string name="accent_color">强调颜色</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">自定义图标形状</string>
+    <string name="custom_icon_shape_create">创建自定义图标形状</string>
+    <string name="custom_icon_shape_edit">编辑自定义图标形状</string>
+    <string name="icon_shape_corner">边角形状</string>
+    <string name="icon_shape_corner_round">圆形</string>
+    <string name="icon_shape_corner_squircle">平滑的</string>
+    <string name="icon_shape_corner_cut">剪切</string>
+    <string name="icon_shape_top_left">左上角</string>
+    <string name="icon_shape_top_right">右上角</string>
+    <string name="icon_shape_bottom_left">左下角</string>
+    <string name="icon_shape_bottom_right">右下角</string>
+    <string name="create">创建</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">图标包</string>
@@ -91,13 +111,13 @@
     <string name="icon_shape_system">系统</string>
     <string name="icon_shape_circle">圆形</string>
     <string name="icon_shape_cylinder">圆柱形</string>
-    <string name="icon_shape_diamond">Diamond</string>
-    <string name="icon_shape_egg">Egg</string>
+    <string name="icon_shape_diamond">菱形</string>
+    <string name="icon_shape_egg">鹅卵石形</string>
     <string name="icon_shape_cupertino">iOS</string>
-    <string name="icon_shape_octagon">Octagon</string>
+    <string name="icon_shape_octagon">八边形</string>
     <string name="icon_shape_sammy">One UI</string>
     <string name="icon_shape_rounded_square">圆角方形</string>
-    <string name="icon_shape_sharp_square">Sharp Square</string>
+    <string name="icon_shape_sharp_square">尖锐方形</string>
     <string name="icon_shape_square">正方形</string>
     <string name="icon_shape_squircle">大圆角</string>
     <string name="icon_shape_teardrop">泪珠形</string>
@@ -118,6 +138,7 @@
     <string name="reset_font">重置</string>
     <!-- colorpreference/* -->
     <string name="dynamic">动态的</string>
+    <string name="swatches">色调</string>
     <string name="presets">预设</string>
     <string name="custom">自定义</string>
     <string name="rgb">RGB</string>
@@ -131,10 +152,10 @@
     <string name="hex">Hex</string>
     <string name="color_sliders">滑块</string>
     <string name="action_copy">复制</string>
-    <string name="action_paste">Paste</string>
+    <string name="action_paste">粘贴</string>
     <string name="copied_toast">已复制到剪切板。</string>
     <string name="invalid_color">无效颜色</string>
-    <string name="app_icon_color">应用图标颜色</string>
+    <string name="launcher_default_color">由 Lawnchair 管理</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">向主屏幕添加新应用</string>
@@ -149,11 +170,11 @@
     <string name="layout">布局</string>
     <string name="home_screen_grid">桌面图标行列数</string>
     <string name="home_screen_lock">锁定主屏幕布局</string>
-    <string name="home_screen_lock_description">Prevents changes to the home screen layout.</string>
+    <string name="home_screen_lock_description">禁止更改主屏幕布局。</string>
     <string name="home_screen_unlock">解锁主屏幕布局</string>
     <!-- used in popup menu-->
     <string name="home_screen_lock_toggle_from_home_popup">主页弹窗中显示锁定按钮</string>
-    <string name="home_screen_locked">Home Screen is locked.</string>
+    <string name="home_screen_locked">主屏幕已锁定。</string>
     <string name="status_bar_label">状态栏</string>
     <string name="show_status_bar">显示状态栏</string>
     <string name="dark_status_bar_label">深色状态栏</string>
@@ -186,9 +207,9 @@
     <string name="smartspace_date_and_time">日期 &amp; 时间</string>
     <string name="smartspace_date">日期</string>
     <string name="smartspace_time">时间</string>
-    <string name="smartspace_time_format">Time Format</string>
+    <string name="smartspace_time_format">时间格式</string>
     <string name="smartspace_time_follow_system">跟随系统</string>
-    <string name="smartspace_time_12_hour_format">12-Hour Format</string>
+    <string name="smartspace_time_12_hour_format">12 小时制</string>
     <string name="smartspace_time_24_hour_format">24 小时制</string>
     <string name="smartspace_weather">天气</string>
     <string name="smartspace_battery_status">电池状态</string>
@@ -199,8 +220,8 @@
     <string name="smartspace_calendar_gregorian">公历</string>
     <string name="smartspace_calendar_persian">波斯历</string>
     <string name="smartspace_preferences">首选项</string>
-    <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added by placing the \"Lawnchair\" widget.</string>
+    <string name="smartspace_widget_toggle_label">在主屏幕上显示</string>
+    <string name="smartspace_widget_toggle_description">资讯一览可以通过放置“Lawnchair”小部件手动添加。</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
     <string name="search_bar_label">搜索栏</string>
@@ -215,12 +236,15 @@
     <string name="search_provider_app_search">应用搜索</string>
     <string name="app_label">应用</string>
     <string name="website_label">网站</string>
-    <string name="qsb_search_provider_app_required">需要安装App</string>
+    <string name="qsb_search_provider_app_required">需要应用。</string>
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">隐藏的应用</string>
     <string name="background_opacity">背景不透明度</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">隐藏的应用</string>
+    <string name="show_enable_smart_hide">在输入全名时显示</string>
+    <string name="hide_hidden_apps_search">在搜索结果中隐藏</string>
     <string name="pref_category_search">搜索</string>
     <string name="show_app_search_bar">显示搜索栏</string>
     <string name="pref_search_auto_show_keyboard">自动显示键盘</string>
@@ -244,6 +268,7 @@
     <!-- <string name="folders_label" /> -->
     <!-- <string name="general_label" /> -->
     <string name="folder_preview_bg_opacity_label">图标背景不透明度</string>
+    <string name="folder_preview_bg_color_label">图标背景颜色</string>
     <!-- <string name="grid" /> -->
     <string name="max_folder_columns">最大文件夹列数</string>
     <string name="max_folder_rows">最大文件夹行数</string>
@@ -285,7 +310,7 @@
     <string name="development">开发者</string>
     <string name="quickswitch_maintenance">QuickSwitch 维护者</string>
     <string name="devops">开发维护人员</string>
-    <string name="support_and_pr">支持和公关</string>
+    <string name="support_and_pr">支持 &amp; 公关</string>
     <!--
       <string name="support" />
       <string name="support_and_pr" />
@@ -309,7 +334,7 @@
     <string name="dt2s_a11y_hint_title">启用无障碍服务</string>
     <string name="dt2s_a11y_hint">若要使用双击息屏，请先启用 Lawnchair 无障碍服务。点击\"打开设置\"，然后选择 \"Lawnchair \"并启用 Lawnchair 无障碍服务。</string>
     <string name="dt2s_warning_open_settings">打开设置</string>
-    <string name="loading">正在加载……</string>
+    <string name="loading">正在加载…</string>
     <string name="system">系统</string>
     <string name="customize_button_text">自定义</string>
     <string name="label">标签</string>

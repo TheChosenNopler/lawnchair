@@ -29,16 +29,17 @@ import app.lawnchair.icons.shape.IconShape
 import app.lawnchair.icons.shape.IconShapeManager
 import app.lawnchair.qsb.providers.QsbSearchProvider
 import app.lawnchair.smartspace.model.SmartspaceCalendar
+import app.lawnchair.smartspace.model.SmartspaceMode
 import app.lawnchair.smartspace.model.SmartspaceTimeFormat
 import app.lawnchair.theme.color.ColorOption
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.R
-import com.android.launcher3.Utilities
 import com.android.launcher3.util.DynamicResource
 import com.android.launcher3.util.MainThreadInitializedObject
 import com.patrykmichalik.opto.core.PreferenceManager
 import com.patrykmichalik.opto.core.firstBlocking
+import com.patrykmichalik.opto.core.setBlocking
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.drop
@@ -87,12 +88,41 @@ class PreferenceManager2(private val context: Context) : PreferenceManager {
         save = { it.toString() },
     )
 
+    val customIconShape = preference(
+        key = stringPreferencesKey(name = "custom_icon_shape"),
+        defaultValue = null,
+        parse = { IconShape.fromString(it) ?: IconShapeManager.getSystemIconShape(context) },
+        save = { it.toString() },
+        onSet = { it?.let(iconShape::setBlocking) },
+    )
+
+    val alwaysReloadIcons = preference(
+        key = booleanPreferencesKey(name = "always_reload_icons"),
+        defaultValue = context.resources.getBoolean(R.bool.config_default_always_reload_icons),
+    )
+
     val notificationDotColor = preference(
         key = stringPreferencesKey(name = "notification_dot_color"),
         parse = ColorOption::fromString,
         save = ColorOption::toString,
         onSet = { reloadHelper.reloadGrid() },
         defaultValue = ColorOption.fromString(context.getString(R.string.config_default_notification_dot_color)),
+    )
+
+    val notificationDotTextColor = preference(
+        key = stringPreferencesKey(name = "notification_dot_text_color"),
+        parse = ColorOption::fromString,
+        save = ColorOption::toString,
+        onSet = { reloadHelper.reloadGrid() },
+        defaultValue = ColorOption.fromString(context.getString(R.string.config_default_notification_dot_text_color)),
+    )
+
+    val folderColor = preference(
+        key = stringPreferencesKey(name = "folder_color"),
+        parse = ColorOption::fromString,
+        save = ColorOption::toString,
+        onSet = { reloadHelper.reloadGrid() },
+        defaultValue = ColorOption.fromString(context.getString(R.string.config_default_folder_color)),
     )
 
     val showNotificationCount = preference(
@@ -168,6 +198,18 @@ class PreferenceManager2(private val context: Context) : PreferenceManager {
     val hideAppDrawerSearchBar = preference(
         key = booleanPreferencesKey(name = "hide_app_drawer_search_bar"),
         defaultValue = context.resources.getBoolean(R.bool.config_default_hide_app_drawer_search_bar),
+        onSet = { reloadHelper.recreate() }
+    )
+
+    val showHiddenAppsInSearch = preference(
+        key = booleanPreferencesKey(name = "show_hidden_apps_in_search"),
+        defaultValue = context.resources.getBoolean(R.bool.config_default_show_hidden_apps_in_search),
+        onSet = { reloadHelper.recreate() }
+    )
+
+    val enableSmartHide = preference(
+        key = booleanPreferencesKey(name = "enable_smart_hide"),
+        defaultValue = context.resources.getBoolean(R.bool.config_default_enable_smart_hide),
         onSet = { reloadHelper.recreate() }
     )
 
@@ -289,6 +331,19 @@ class PreferenceManager2(private val context: Context) : PreferenceManager {
         }
     )
 
+    val smartspaceMode = preference(
+        key = stringPreferencesKey("smartspace_mode"),
+        defaultValue = SmartspaceMode.fromString(context.getString(R.string.config_default_smartspace_mode)),
+        parse = { SmartspaceMode.fromString(it) },
+        save = { it.toString() },
+        onSet = { reloadHelper.recreate() },
+    )
+
+    val smartspaceModeSelection = preference(
+        key = booleanPreferencesKey("smartspace_mode_selection"),
+        defaultValue = false,
+    )
+
     val smartspaceAagWidget = preference(
         key = booleanPreferencesKey("enable_smartspace_aag_widget"),
         defaultValue = true
@@ -366,12 +421,7 @@ class PreferenceManager2(private val context: Context) : PreferenceManager {
         key = key,
         defaultValue = defaultValue,
         parse = { value ->
-            try {
-                return@preference Json.decodeFromString(value)
-            } catch (e: Throwable) {
-                Log.d("PreferenceManager2", "failed to parse preference $key=$value")
-                return@preference defaultValue
-            }
+            runCatching { Json.decodeFromString<T>(value) }.getOrDefault(defaultValue)
         },
         save = Json::encodeToString,
     )

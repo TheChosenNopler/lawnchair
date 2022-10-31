@@ -47,8 +47,12 @@
     <string name="font_picker_description">Beberapa teks tetap tidak berubah.</string>
     <string name="smartspace_calendar_label">Kustomisasi Kalender Sekilas</string>
     <string name="smartspace_calendar_description">Izinkan menampilkan tanggal dalam sistem kalender non-Gregorian.</string>
-    <string name="workspace_increase_max_grid_size_label">Increased Max Home Screen Grid Size</string>
-    <string name="workspace_increase_max_grid_size_description">Increase the max allowed Home Screen grid size from 10 x 10 to 20 x 20.</string>
+    <string name="workspace_increase_max_grid_size_label">Peningkatan Ukuran Kotak Layar Utama Maks</string>
+    <string name="workspace_increase_max_grid_size_description">Tingkatkan ukuran kisi Layar Beranda maksimum yang diizinkan dari 10 x 10 menjadi 20 x 20.</string>
+    <string name="always_reload_icons_label">Selalu Muat ulang Ikon</string>
+    <string name="always_reload_icons_description">Hindari menggunakan ikon cache dari paket ikon</string>
+    <string name="transparent_background_icons">Transparan Ikon Bertema</string>
+    <string name="transparent_background_icons_description">Gunakan latar belakang transparan pada ikon bertema</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotasi Layar Beranda</string>
     <string name="home_screen_rotaton_description">Ketika perangkat diputar.</string>
@@ -64,6 +68,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Tampilkan Jumlah Notifikasi</string>
     <string name="notification_dots_color">Warna Titik Notifikasi</string>
+    <string name="notification_dots_text_color">Warna Hitungan Notifikasi</string>
+    <string name="notification_dots_color_contrast_warning_always">Peringatan: Warna Dot &amp; Hitungan Notifikasi tidak memiliki kontras yang cukup satu sama lain</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Peringatan: Warna Dot &amp; Hitungan Notifikasi mungkin tidak selalu memiliki kontras yang cukup satu sama lain</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Akses Notifikasi Diperlukan</string>
     <string name="missing_notification_access_description">Akses notifikasi diperlukan.</string>
@@ -76,6 +83,19 @@
     <string name="theme_system_default">Sistem</string>
     <string name="theme_follow_wallpaper">Samakan dengan wallpaper</string>
     <string name="accent_color">Warna Aksen</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Custom Icon Shape</string>
+    <string name="custom_icon_shape_create">Create Custom Icon Shape</string>
+    <string name="custom_icon_shape_edit">Edit Custom Icon Shape</string>
+    <string name="icon_shape_corner">Corner Shape</string>
+    <string name="icon_shape_corner_round">Round</string>
+    <string name="icon_shape_corner_squircle">Smooth</string>
+    <string name="icon_shape_corner_cut">Cut</string>
+    <string name="icon_shape_top_left">Top Left</string>
+    <string name="icon_shape_top_right">Top Right</string>
+    <string name="icon_shape_bottom_left">Bottom Left</string>
+    <string name="icon_shape_bottom_right">Bottom Right</string>
+    <string name="create">Buat</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Paket Ikon</string>
@@ -91,13 +111,13 @@
     <string name="icon_shape_system">Sistem</string>
     <string name="icon_shape_circle">Lingkaran</string>
     <string name="icon_shape_cylinder">Silinder</string>
-    <string name="icon_shape_diamond">Diamond</string>
-    <string name="icon_shape_egg">Egg</string>
+    <string name="icon_shape_diamond">Berlian</string>
+    <string name="icon_shape_egg">Telur</string>
     <string name="icon_shape_cupertino">iOS</string>
-    <string name="icon_shape_octagon">Octagon</string>
+    <string name="icon_shape_octagon">Segi delapan</string>
     <string name="icon_shape_sammy">One UI</string>
     <string name="icon_shape_rounded_square">Persegi Membulat</string>
-    <string name="icon_shape_sharp_square">Sharp Square</string>
+    <string name="icon_shape_sharp_square">Kotak Tajam</string>
     <string name="icon_shape_square">Persegi</string>
     <string name="icon_shape_squircle">Squircle</string>
     <string name="icon_shape_teardrop">Tetesan air</string>
@@ -118,6 +138,7 @@
     <string name="reset_font">Atur ulang</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dinamis</string>
+    <string name="swatches">Swatch</string>
     <string name="presets">Preset</string>
     <string name="custom">Kustom</string>
     <string name="rgb">RGB</string>
@@ -131,10 +152,10 @@
     <string name="hex">Hex</string>
     <string name="color_sliders">Sliders</string>
     <string name="action_copy">Salin</string>
-    <string name="action_paste">Paste</string>
+    <string name="action_paste">Tempel</string>
     <string name="copied_toast">Disalin ke papan klip.</string>
     <string name="invalid_color">Warna tidak valid</string>
-    <string name="app_icon_color">Warna Icon Aplikasi</string>
+    <string name="launcher_default_color">Dikelola oleh Lawchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Tambahkan Aplikasi Baru ke Layar Beranda</string>
@@ -149,11 +170,11 @@
     <string name="layout">Tata Letak</string>
     <string name="home_screen_grid">Kisi Layar Utama</string>
     <string name="home_screen_lock">Kunci Layar Beranda</string>
-    <string name="home_screen_lock_description">Prevents changes to the home screen layout.</string>
+    <string name="home_screen_lock_description">Mencegah perubahan pada tata letak layar beranda.</string>
     <string name="home_screen_unlock">Buka Kunci Layar Beranda</string>
     <!-- used in popup menu-->
     <string name="home_screen_lock_toggle_from_home_popup">Tampilkan Tombol Kunci di Pop-Up</string>
-    <string name="home_screen_locked">Home Screen is locked.</string>
+    <string name="home_screen_locked">Susunan Layar utama dikunci.</string>
     <string name="status_bar_label">Bar Status</string>
     <string name="show_status_bar">Tampilkan bar status</string>
     <string name="dark_status_bar_label">Tingkat Kegelapan Bar Status</string>
@@ -186,9 +207,9 @@
     <string name="smartspace_date_and_time">Tanggal &amp; Waktu</string>
     <string name="smartspace_date">Tanggal</string>
     <string name="smartspace_time">Waktu</string>
-    <string name="smartspace_time_format">Time Format</string>
+    <string name="smartspace_time_format">Format Waktu</string>
     <string name="smartspace_time_follow_system">Ikuti sistem</string>
-    <string name="smartspace_time_12_hour_format">12-Hour Format</string>
+    <string name="smartspace_time_12_hour_format">Format 12-jam 1: 00 PM</string>
     <string name="smartspace_time_24_hour_format">Format 24 Jam</string>
     <string name="smartspace_weather">Cuaca</string>
     <string name="smartspace_battery_status">Status Baterai</string>
@@ -199,8 +220,8 @@
     <string name="smartspace_calendar_gregorian">Gregorian</string>
     <string name="smartspace_calendar_persian">Persia</string>
     <string name="smartspace_preferences">Pengaturan</string>
-    <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added by placing the \"Lawnchair\" widget.</string>
+    <string name="smartspace_widget_toggle_label">Tampilkan dilayar Utama</string>
+    <string name="smartspace_widget_toggle_description">At a Glance dapat ditambahkan secara manual dengan menempatkan widget \"Lawnchair\".</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
     <string name="search_bar_label">Bilah Pencarian</string>
@@ -219,8 +240,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Aplikasi Tersembunyi</string>
     <string name="background_opacity">Kegelapan Latar Belakang</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Aplikasi Tersembunyi</string>
+    <string name="show_enable_smart_hide">Show when Full Name is Typed</string>
+    <string name="hide_hidden_apps_search">Hide in Search Results</string>
     <string name="pref_category_search">Cari</string>
     <string name="show_app_search_bar">Tampilkan Bilah Pencarian</string>
     <string name="pref_search_auto_show_keyboard">Tampilkan keyboard secara otomatis</string>
@@ -244,6 +268,7 @@
     <!-- <string name="folders_label" /> -->
     <!-- <string name="general_label" /> -->
     <string name="folder_preview_bg_opacity_label">Ketebalan Transparansi Latar Belakang Ikon</string>
+    <string name="folder_preview_bg_color_label">Warna Latar Ikon</string>
     <!-- <string name="grid" /> -->
     <string name="max_folder_columns">Maks. Kolom Folder</string>
     <string name="max_folder_rows">Maks. Baris Folder</string>

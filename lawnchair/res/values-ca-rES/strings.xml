@@ -47,8 +47,12 @@
     <string name="font_picker_description">El text encara no té cap canvi.</string>
     <string name="smartspace_calendar_label">Personalització del calendari d\'una ullada</string>
     <string name="smartspace_calendar_description">Permet mostrar la data en sistemes de calendari no Gregorià.</string>
-    <string name="workspace_increase_max_grid_size_label">Increased Max Home Screen Grid Size</string>
-    <string name="workspace_increase_max_grid_size_description">Increase the max allowed Home Screen grid size from 10 x 10 to 20 x 20.</string>
+    <string name="workspace_increase_max_grid_size_label">S\'ha incrementat la màxima mida de la graella de la pantalla principal</string>
+    <string name="workspace_increase_max_grid_size_description">Incrementa la màxima mida permesa en la graella de la pantalla principal de 10 x 10 a 20 x 20.</string>
+    <string name="always_reload_icons_label">Recarrega sempre les icones</string>
+    <string name="always_reload_icons_description">Evita utilitzar icones en memòria cau de paquets d\'icones</string>
+    <string name="transparent_background_icons">Icones amb fons transparent</string>
+    <string name="transparent_background_icons_description">Utilitzar fons transparent en les icones tematitzades</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotació de la Pantalla d\'inici</string>
     <string name="home_screen_rotaton_description">Quan es gira el dispositiu.</string>
@@ -64,6 +68,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Mostrar comptador de notificacions</string>
     <string name="notification_dots_color">Color del punt de notificació</string>
+    <string name="notification_dots_text_color">Color del punt de notificació</string>
+    <string name="notification_dots_color_contrast_warning_always">Avis: El color del punt de notificació &amp; no té suficient contrast amb els altres</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Avis: El color del punt de notificació &amp; potser no tindrà suficient contrast amb els altres</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Es necessita accés a les notificacions</string>
     <string name="missing_notification_access_description">És necessari l\'accés a les notificacions.</string>
@@ -76,6 +83,19 @@
     <string name="theme_system_default">Sistema</string>
     <string name="theme_follow_wallpaper">Segueix el Fons de Pantalla</string>
     <string name="accent_color">Color d\'èmfasi</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Custom Icon Shape</string>
+    <string name="custom_icon_shape_create">Create Custom Icon Shape</string>
+    <string name="custom_icon_shape_edit">Edit Custom Icon Shape</string>
+    <string name="icon_shape_corner">Corner Shape</string>
+    <string name="icon_shape_corner_round">Round</string>
+    <string name="icon_shape_corner_squircle">Smooth</string>
+    <string name="icon_shape_corner_cut">Cut</string>
+    <string name="icon_shape_top_left">Top Left</string>
+    <string name="icon_shape_top_right">Top Right</string>
+    <string name="icon_shape_bottom_left">Bottom Left</string>
+    <string name="icon_shape_bottom_right">Bottom Right</string>
+    <string name="create">Crea</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Paquet d\'icones</string>
@@ -91,13 +111,13 @@
     <string name="icon_shape_system">Sistema</string>
     <string name="icon_shape_circle">Cercle</string>
     <string name="icon_shape_cylinder">Cilindre</string>
-    <string name="icon_shape_diamond">Diamond</string>
-    <string name="icon_shape_egg">Egg</string>
+    <string name="icon_shape_diamond">Diamant</string>
+    <string name="icon_shape_egg">Ou</string>
     <string name="icon_shape_cupertino">iOS</string>
-    <string name="icon_shape_octagon">Octagon</string>
+    <string name="icon_shape_octagon">Octàgon</string>
     <string name="icon_shape_sammy">One UI</string>
     <string name="icon_shape_rounded_square">Quadrat arrodonit</string>
-    <string name="icon_shape_sharp_square">Sharp Square</string>
+    <string name="icon_shape_sharp_square">Quadrat agut</string>
     <string name="icon_shape_square">Quadrat</string>
     <string name="icon_shape_squircle">Quadrat Superellipse</string>
     <string name="icon_shape_teardrop">Gota d\'aigua</string>
@@ -118,6 +138,7 @@
     <string name="reset_font">Reiniciar</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dinàmic</string>
+    <string name="swatches">Mostres</string>
     <string name="presets">Predefinits</string>
     <string name="custom">Personalitzat</string>
     <string name="rgb">RGB</string>
@@ -131,10 +152,10 @@
     <string name="hex">Hex</string>
     <string name="color_sliders">Deslliçadors</string>
     <string name="action_copy">Copia</string>
-    <string name="action_paste">Paste</string>
+    <string name="action_paste">Enganxar</string>
     <string name="copied_toast">S\'ha copiat al porta-retalls.</string>
     <string name="invalid_color">Color invàlid</string>
-    <string name="app_icon_color">Color de la icona de l\'aplicació</string>
+    <string name="launcher_default_color">Gestionat per Lawnchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Afegeix les apps noves a la Pantalla d\'inici</string>
@@ -149,11 +170,11 @@
     <string name="layout">Diseny</string>
     <string name="home_screen_grid">Graella de la pantalla d\'inici</string>
     <string name="home_screen_lock">Bloquejar Pantalla Inicial</string>
-    <string name="home_screen_lock_description">Prevents changes to the home screen layout.</string>
+    <string name="home_screen_lock_description">Prevén canvis a la distribució de la pantalla principal.</string>
     <string name="home_screen_unlock">Desbloquejar Pantalla Inicial</string>
     <!-- used in popup menu-->
     <string name="home_screen_lock_toggle_from_home_popup">Mostrar botó de bloquejar en finestra emergent</string>
-    <string name="home_screen_locked">Home Screen is locked.</string>
+    <string name="home_screen_locked">La pantalla principal està bloquejada.</string>
     <string name="status_bar_label">Barra de estat</string>
     <string name="show_status_bar">Mostrar la barra d\'estat</string>
     <string name="dark_status_bar_label">Barra d\'estat fosca</string>
@@ -186,9 +207,9 @@
     <string name="smartspace_date_and_time">Data i hora</string>
     <string name="smartspace_date">Data</string>
     <string name="smartspace_time">Hora</string>
-    <string name="smartspace_time_format">Time Format</string>
+    <string name="smartspace_time_format">Format del temps</string>
     <string name="smartspace_time_follow_system">Segueix el del Sistema</string>
-    <string name="smartspace_time_12_hour_format">12-Hour Format</string>
+    <string name="smartspace_time_12_hour_format">Format de temps de 12 hores</string>
     <string name="smartspace_time_24_hour_format">Format de 24 hores</string>
     <string name="smartspace_weather">El temps</string>
     <string name="smartspace_battery_status">Estat de bateria</string>
@@ -199,8 +220,8 @@
     <string name="smartspace_calendar_gregorian">Georgià</string>
     <string name="smartspace_calendar_persian">Persa</string>
     <string name="smartspace_preferences">Preferències</string>
-    <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added by placing the \"Lawnchair\" widget.</string>
+    <string name="smartspace_widget_toggle_label">Mostrar a la pantalla principal</string>
+    <string name="smartspace_widget_toggle_description">D\'una ullada pot ser manualment afegit posant la Widget \"Lawnchair\".</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
     <string name="search_bar_label">Barra de cerca</string>
@@ -219,8 +240,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Aplicacions amagades</string>
     <string name="background_opacity">Opacitat del fons</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Aplicacions amagades</string>
+    <string name="show_enable_smart_hide">Show when Full Name is Typed</string>
+    <string name="hide_hidden_apps_search">Hide in Search Results</string>
     <string name="pref_category_search">Cerca</string>
     <string name="show_app_search_bar">Mostra la Barra de Cerca</string>
     <string name="pref_search_auto_show_keyboard">Mostrar teclat automàticament</string>
@@ -245,6 +269,7 @@
     <!-- <string name="folders_label" /> -->
     <!-- <string name="general_label" /> -->
     <string name="folder_preview_bg_opacity_label">Opacitat del fons de la icona</string>
+    <string name="folder_preview_bg_color_label">Color del fons d\'icona</string>
     <!-- <string name="grid" /> -->
     <string name="max_folder_columns">Màxim de Columnes de Carpeta</string>
     <string name="max_folder_rows">Màxim de Files de Carpeta</string>

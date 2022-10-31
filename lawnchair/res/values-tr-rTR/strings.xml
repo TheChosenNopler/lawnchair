@@ -47,8 +47,12 @@
     <string name="font_picker_description">Bazı yazılar değişmeden kalabilir.</string>
     <string name="smartspace_calendar_label">Bir Bakışta Takvim Özelleştirme</string>
     <string name="smartspace_calendar_description">Gregoryen olmayan takvim sistemlerinde tarihin gösterilmesine izin verin.</string>
-    <string name="workspace_increase_max_grid_size_label">Increased Max Home Screen Grid Size</string>
-    <string name="workspace_increase_max_grid_size_description">Increase the max allowed Home Screen grid size from 10 x 10 to 20 x 20.</string>
+    <string name="workspace_increase_max_grid_size_label">Maksimum Ana Ekran Izgara Boyutu</string>
+    <string name="workspace_increase_max_grid_size_description">Ana ekran Maksimum Izgara Boyutunu 10x10\' dan 20x20 \'ye çıkar.</string>
+    <string name="always_reload_icons_label">Simgeleri Her Zaman Yeniden Yükle</string>
+    <string name="always_reload_icons_description">Önbelleklenmiş ikonları kullanmaktan kaçın</string>
+    <string name="transparent_background_icons">Saydam temalı ikonlar</string>
+    <string name="transparent_background_icons_description">Temalı ikonlarda saydam arkaplan kullan</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Ana Ekran Rotasyonu</string>
     <string name="home_screen_rotaton_description">Cihaz döndürüldüğü zaman.</string>
@@ -64,6 +68,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Bildirim Sayısını Göster</string>
     <string name="notification_dots_color">Bildirim Vurgu Rengi</string>
+    <string name="notification_dots_text_color">Bildirim Noktası Rengi</string>
+    <string name="notification_dots_color_contrast_warning_always">Uyarı; Bildirim Noktası &amp; Bildirim Sayacı noktasının renkleri birbiriyle yeterli kontrasta sahip değil</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Uyarı: Bildirim Noktası &amp; Bildirim Sayacı noktasının renkleri her zaman birbiriyle yeterli kontrasta sahip olmayabilir</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Bildirim Erişimi Gerekli</string>
     <string name="missing_notification_access_description">Bildirim Erişimi Gerekli.</string>
@@ -76,6 +83,19 @@
     <string name="theme_system_default">Sistem</string>
     <string name="theme_follow_wallpaper">Duvar kağıdı ile eşleştir</string>
     <string name="accent_color">Vurgu Rengi</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">özel simge şekli</string>
+    <string name="custom_icon_shape_create">Özel Simge Şekli</string>
+    <string name="custom_icon_shape_edit">Özel Simge Şekli</string>
+    <string name="icon_shape_corner">Kenar Şekli</string>
+    <string name="icon_shape_corner_round">Daire</string>
+    <string name="icon_shape_corner_squircle">Yumuşak</string>
+    <string name="icon_shape_corner_cut">Keskin Köşe</string>
+    <string name="icon_shape_top_left">Sol Üst</string>
+    <string name="icon_shape_top_right">Sağ Üst</string>
+    <string name="icon_shape_bottom_left">Sol Alt</string>
+    <string name="icon_shape_bottom_right">Sağ Alt</string>
+    <string name="create">Oluştur</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Simge Paketi</string>
@@ -91,13 +111,13 @@
     <string name="icon_shape_system">Sistem</string>
     <string name="icon_shape_circle">Yuvarlak</string>
     <string name="icon_shape_cylinder">Silindir</string>
-    <string name="icon_shape_diamond">Diamond</string>
-    <string name="icon_shape_egg">Egg</string>
+    <string name="icon_shape_diamond">Elmas</string>
+    <string name="icon_shape_egg">Yumurta</string>
     <string name="icon_shape_cupertino">iOS</string>
-    <string name="icon_shape_octagon">Octagon</string>
+    <string name="icon_shape_octagon">Sekizgen</string>
     <string name="icon_shape_sammy">One UI</string>
     <string name="icon_shape_rounded_square">Yuvarlak Kare</string>
-    <string name="icon_shape_sharp_square">Sharp Square</string>
+    <string name="icon_shape_sharp_square">Keskin Kare</string>
     <string name="icon_shape_square">Kare</string>
     <string name="icon_shape_squircle">Yuvarlatılmış Kare</string>
     <string name="icon_shape_teardrop">Damla</string>
@@ -118,6 +138,7 @@
     <string name="reset_font">Sıfırla</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dinamik</string>
+    <string name="swatches">Paletler</string>
     <string name="presets">Ön Ayarlar</string>
     <string name="custom">Özel</string>
     <string name="rgb">RGB</string>
@@ -131,10 +152,10 @@
     <string name="hex">Hex</string>
     <string name="color_sliders">Sliders</string>
     <string name="action_copy">Kopyala</string>
-    <string name="action_paste">Paste</string>
+    <string name="action_paste">Yapıştır</string>
     <string name="copied_toast">Panoya kopyalandı.</string>
     <string name="invalid_color">Geçersiz Renk</string>
-    <string name="app_icon_color">Uygulama Simge Rengi</string>
+    <string name="launcher_default_color">Lawnchair tarafından yönetilmektedir</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Ana Ekrana Yeni Uygulamalar Ekleyin</string>
@@ -149,11 +170,11 @@
     <string name="layout">Düzen</string>
     <string name="home_screen_grid">Ana Ekran Izgaraları</string>
     <string name="home_screen_lock">Ana Ekranı Kilitle</string>
-    <string name="home_screen_lock_description">Prevents changes to the home screen layout.</string>
+    <string name="home_screen_lock_description">Ana Ekran düzeninde değişiklik yapılmasını önler.</string>
     <string name="home_screen_unlock">Ana Ekranın Kilidini Aç</string>
     <!-- used in popup menu-->
     <string name="home_screen_lock_toggle_from_home_popup">Açılır Pencerede Kilit Düğmesini Göster</string>
-    <string name="home_screen_locked">Home Screen is locked.</string>
+    <string name="home_screen_locked">Ana Ekran kilitli.</string>
     <string name="status_bar_label">Durum Çubuğu</string>
     <string name="show_status_bar">Durum Çubuğunu Göster</string>
     <string name="dark_status_bar_label">Koyu Durum Çubuğu</string>
@@ -186,9 +207,9 @@
     <string name="smartspace_date_and_time">Tarih &amp; Zaman</string>
     <string name="smartspace_date">Tarih</string>
     <string name="smartspace_time">Zaman</string>
-    <string name="smartspace_time_format">Time Format</string>
+    <string name="smartspace_time_format">Zaman Biçimi</string>
     <string name="smartspace_time_follow_system">Sistemi takip et</string>
-    <string name="smartspace_time_12_hour_format">12-Hour Format</string>
+    <string name="smartspace_time_12_hour_format">12 Saat Zaman Biçimi</string>
     <string name="smartspace_time_24_hour_format">24 Saat Formatı</string>
     <string name="smartspace_weather">Hava durumu</string>
     <string name="smartspace_battery_status">Batarya durumu</string>
@@ -199,8 +220,8 @@
     <string name="smartspace_calendar_gregorian">Gregorian</string>
     <string name="smartspace_calendar_persian">Persian</string>
     <string name="smartspace_preferences">Tercihler</string>
-    <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added by placing the \"Lawnchair\" widget.</string>
+    <string name="smartspace_widget_toggle_label">Ana ekrannda göster</string>
+    <string name="smartspace_widget_toggle_description">Bir Bakışta ya \"Lawnchair\" widget\'ı yerleştirilerek manuel olarak eklenebilir.</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
     <string name="search_bar_label">Arama Kutusu</string>
@@ -219,8 +240,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Gizlenmiş Uygulamalar</string>
     <string name="background_opacity">Arka Plan Opaklığı</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Gizlenmiş Uygulamalar</string>
+    <string name="show_enable_smart_hide">Tam adı Yazıldığında Göster</string>
+    <string name="hide_hidden_apps_search">Arama Sonuçlarında gizle</string>
     <string name="pref_category_search">Ara</string>
     <string name="show_app_search_bar">Arama Çubuğunu Göster</string>
     <string name="pref_search_auto_show_keyboard">Klavyeyi Otomatik Göster</string>
@@ -245,6 +269,7 @@
     <!-- <string name="folders_label" /> -->
     <!-- <string name="general_label" /> -->
     <string name="folder_preview_bg_opacity_label">Simge Arka Plan Saydamlığı</string>
+    <string name="folder_preview_bg_color_label">İkon ArkaPlan Rengi</string>
     <!-- <string name="grid" /> -->
     <string name="max_folder_columns">Maksimum Klasör Sütunları</string>
     <string name="max_folder_rows">Maksimum Klasör Sıraları</string>

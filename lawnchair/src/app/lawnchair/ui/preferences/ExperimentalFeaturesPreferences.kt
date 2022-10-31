@@ -36,6 +36,20 @@ fun ExperimentalFeaturesPreferences() {
                 label = stringResource(id = R.string.workspace_increase_max_grid_size_label),
                 description = stringResource(id = R.string.workspace_increase_max_grid_size_description),
             )
+            SwitchPreference(
+                adapter = prefs2.alwaysReloadIcons.getAdapter(),
+                label = stringResource(id = R.string.always_reload_icons_label),
+                description = stringResource(id = R.string.always_reload_icons_description),
+            )
+            SwitchPreference(
+                adapter = prefs.transparentIconBackground.getAdapter(),
+                label = stringResource(id = R.string.transparent_background_icons),
+                description = stringResource(id = R.string.transparent_background_icons_description),
+            )
+            SwitchPreference(
+                adapter = prefs2.smartspaceModeSelection.getAdapter(),
+                label = stringResource(id = R.string.smartspace_mode_selection),
+            )
         }
     }
 }

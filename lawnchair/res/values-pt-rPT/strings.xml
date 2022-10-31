@@ -47,8 +47,12 @@
     <string name="font_picker_description">Algum texto permanece inalterado.</string>
     <string name="smartspace_calendar_label">Personalização do Calendário At a Glance</string>
     <string name="smartspace_calendar_description">Permitir mostrar a data em sistemas de calendário não-Gregoriano.</string>
-    <string name="workspace_increase_max_grid_size_label">Increased Max Home Screen Grid Size</string>
-    <string name="workspace_increase_max_grid_size_description">Increase the max allowed Home Screen grid size from 10 x 10 to 20 x 20.</string>
+    <string name="workspace_increase_max_grid_size_label">Tamanho Máximo da Grelha do Ecrã Inicial Aumentado</string>
+    <string name="workspace_increase_max_grid_size_description">Aumentar o tamanho máximo permitido da grelha do Ecrã Inicial de 10 x 10 para 20 x 20.</string>
+    <string name="always_reload_icons_label">Recarregar Ícones Sempre</string>
+    <string name="always_reload_icons_description">Evitar utilizar ícones em cache dos pacotes de ícones</string>
+    <string name="transparent_background_icons">Ícones Temáticos Transparentes</string>
+    <string name="transparent_background_icons_description">Usar fundo transparente nos ícones temáticos</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotação de Ecrã Inicial</string>
     <string name="home_screen_rotaton_description">Quando o dispositivo é rodado.</string>
@@ -64,6 +68,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Mostrar Contador de Notificações</string>
     <string name="notification_dots_color">Cor do Ponto de Notificação</string>
+    <string name="notification_dots_text_color">Cor da Contagem de Notificações</string>
+    <string name="notification_dots_color_contrast_warning_always">Aviso: Ponto de Notificação &amp; Cores do contador não têm contraste suficiente entre elas</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Aviso: Ponto de Notificação &amp; Cores do contador poderão não ter contraste suficiente entre elas</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Acesso às notificações necessário</string>
     <string name="missing_notification_access_description">Acesso às notificações necessário.</string>
@@ -76,6 +83,19 @@
     <string name="theme_system_default">Sistema</string>
     <string name="theme_follow_wallpaper">Corresponder o Wallpaper</string>
     <string name="accent_color">Cor de Destaque</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Formato de Ícones Personalizado</string>
+    <string name="custom_icon_shape_create">Criar Formato de Ícones Personalizado</string>
+    <string name="custom_icon_shape_edit">Editar Formato de Ícones Personalizado</string>
+    <string name="icon_shape_corner">Formato dos Cantos</string>
+    <string name="icon_shape_corner_round">Redondo</string>
+    <string name="icon_shape_corner_squircle">Suave</string>
+    <string name="icon_shape_corner_cut">Cortado</string>
+    <string name="icon_shape_top_left">Superior Esquerdo</string>
+    <string name="icon_shape_top_right">Superior Direito</string>
+    <string name="icon_shape_bottom_left">Inferior Esquerdo</string>
+    <string name="icon_shape_bottom_right">Inferior Direito</string>
+    <string name="create">Criar</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Pacote de Ícones</string>
@@ -91,13 +111,13 @@
     <string name="icon_shape_system">Sistema</string>
     <string name="icon_shape_circle">Círculo</string>
     <string name="icon_shape_cylinder">Cilindro</string>
-    <string name="icon_shape_diamond">Diamond</string>
-    <string name="icon_shape_egg">Egg</string>
+    <string name="icon_shape_diamond">Diamante</string>
+    <string name="icon_shape_egg">Ovo</string>
     <string name="icon_shape_cupertino">iOS</string>
-    <string name="icon_shape_octagon">Octagon</string>
+    <string name="icon_shape_octagon">Octágono</string>
     <string name="icon_shape_sammy">One UI</string>
     <string name="icon_shape_rounded_square">Quadrado Arredondado</string>
-    <string name="icon_shape_sharp_square">Sharp Square</string>
+    <string name="icon_shape_sharp_square">Quadrado Afiado</string>
     <string name="icon_shape_square">Quadrado</string>
     <string name="icon_shape_squircle">Quadrado Arredondado</string>
     <string name="icon_shape_teardrop">Lágrima</string>
@@ -118,6 +138,7 @@
     <string name="reset_font">Redefinir</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dinâmico</string>
+    <string name="swatches">Amostras</string>
     <string name="presets">Predefinições</string>
     <string name="custom">Personalizado</string>
     <string name="rgb">RGB</string>
@@ -131,13 +152,13 @@
     <string name="hex">Hexadecimal</string>
     <string name="color_sliders">Controlos de cor</string>
     <string name="action_copy">Copiar</string>
-    <string name="action_paste">Paste</string>
+    <string name="action_paste">Colar</string>
     <string name="copied_toast">Copiado para a área de transferência.</string>
     <string name="invalid_color">Cor Inválida</string>
-    <string name="app_icon_color">Cor do Ícone da Aplicação</string>
+    <string name="launcher_default_color">Gerido por Lawnchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
-    <string name="auto_add_shortcuts_label">Adicionar Novas Aplicações ao Ecrã Inicial</string>
+    <string name="auto_add_shortcuts_label">Adicionar Novas Apps ao Ecrã Inicial</string>
     <!-- <string name="gesture_double_tap" /> -->
     <string name="minus_one_enable">Feed</string>
     <string name="minus_one_unavailable">Nenhum feed instalado.</string>
@@ -147,20 +168,20 @@
     <string name="wallpaper_depth_effect_description">Aproximar e afastar do papel de parede quando transitar entre estados.</string>
     <string name="show_sys_ui_scrim">Sombreado superior</string>
     <string name="layout">Esquema</string>
-    <string name="home_screen_grid">Grelha da Tela Inicial</string>
+    <string name="home_screen_grid">Grelha do Ecrã Inicial</string>
     <string name="home_screen_lock">Bloquear Ecrã Inicial</string>
-    <string name="home_screen_lock_description">Prevents changes to the home screen layout.</string>
+    <string name="home_screen_lock_description">Impede modificações ao layout do ecrã inicial.</string>
     <string name="home_screen_unlock">Desbloquear Ecrã Inicial</string>
     <!-- used in popup menu-->
     <string name="home_screen_lock_toggle_from_home_popup">Mostrar Botão de Bloqueio no Pop-Up</string>
-    <string name="home_screen_locked">Home Screen is locked.</string>
+    <string name="home_screen_locked">O Ecrã Inicial está bloqueado.</string>
     <string name="status_bar_label">Barra de Estado</string>
     <string name="show_status_bar">Mostrar Barra de Estado</string>
     <string name="dark_status_bar_label">Barra de Estado Escura</string>
     <string name="icons">Ícones</string>
-    <string name="icon_size">Tamanho do Ícone</string>
+    <string name="icon_size">Tamanho dos Ícones</string>
     <string name="show_home_labels">Mostrar Rótulos</string>
-    <string name="label_size">Tamanho da Etiqueta</string>
+    <string name="label_size">Tamanho do Rótulo</string>
     <string name="reset_custom_icons">Redefinir os Ícones Personalizados</string>
     <string name="reset_custom_icons_confirmation">Todos os ícones personalizados vão ser redefinidos. Quer continuar?</string>
     <!-- <string name="widget_button_text" /> (unknown source)-->
@@ -183,12 +204,12 @@
     <string name="smartspace_widget_placeholder_date">Sex, mar 3</string>
     <string name="preview_label">Pré-visualização</string>
     <string name="smartspace_calendar">Calendário</string>
-    <string name="smartspace_date_and_time">Data &amp; Tempo</string>
+    <string name="smartspace_date_and_time">Data e Hora</string>
     <string name="smartspace_date">Data</string>
-    <string name="smartspace_time">Tempo</string>
-    <string name="smartspace_time_format">Time Format</string>
+    <string name="smartspace_time">Hora</string>
+    <string name="smartspace_time_format">Formato da Hora</string>
     <string name="smartspace_time_follow_system">Seguir o Sistema</string>
-    <string name="smartspace_time_12_hour_format">12-Hour Format</string>
+    <string name="smartspace_time_12_hour_format">Formato de 12 Horas</string>
     <string name="smartspace_time_24_hour_format">Formato 24 Horas</string>
     <string name="smartspace_weather">Meteorologia</string>
     <string name="smartspace_battery_status">Estado da Bateria</string>
@@ -199,8 +220,8 @@
     <string name="smartspace_calendar_gregorian">Gregoriano</string>
     <string name="smartspace_calendar_persian">Persa</string>
     <string name="smartspace_preferences">Preferências</string>
-    <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added by placing the \"Lawnchair\" widget.</string>
+    <string name="smartspace_widget_toggle_label">Mostrar no Ecrã Inicial</string>
+    <string name="smartspace_widget_toggle_description">Em Resumo pode ser adicionado manualmente colocando o widget \"Lawnchair\".</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
     <string name="search_bar_label">Barra de Pesquisa</string>
@@ -219,8 +240,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Aplicações Ocultas</string>
     <string name="background_opacity">Opacidade de Fundo</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Aplicações Ocultas</string>
+    <string name="show_enable_smart_hide">Mostrar quando o Nome Completo é Escrito</string>
+    <string name="hide_hidden_apps_search">Esconder nos Resultados de Pesquisa</string>
     <string name="pref_category_search">Pesquisar</string>
     <string name="show_app_search_bar">Mostrar Barra de Pesquisa</string>
     <string name="pref_search_auto_show_keyboard">Mostrar Teclado Automaticamente</string>
@@ -245,6 +269,7 @@
     <!-- <string name="folders_label" /> -->
     <!-- <string name="general_label" /> -->
     <string name="folder_preview_bg_opacity_label">Opacidade de Fundo dos Ícones</string>
+    <string name="folder_preview_bg_color_label">Cor de Fundo do Ícone</string>
     <!-- <string name="grid" /> -->
     <string name="max_folder_columns">Max. de Colunas da Pasta</string>
     <string name="max_folder_rows">Max. de Linhas da Pasta</string>
@@ -307,7 +332,7 @@
     <string name="dt2s_admin_hint_title">Permissões de Administrador Necessárias</string>
     <string name="dt2s_admin_hint">Para usar o Duplo Toque para Dormir, defina o Lawnchair como uma aplicação de administrador do dispositivo. Toque em \"Abrir Definições,\" e de seguida em \"Ativar a aplicação de administrador deste dispositivo.\"</string>
     <string name="dt2s_admin_warning">O Duplo Toque para Dormir será desativado.</string>
-    <string name="dt2s_a11y_hint_title">Active o Serviço se Acessibilidade</string>
+    <string name="dt2s_a11y_hint_title">Ative o Serviço se Acessibilidade</string>
     <string name="dt2s_a11y_hint">Para usar o Duplo Toque para Dormir, ative o serviço de acessibilidade do Lawnchair. Toque em Abrir Definições, e de seguida selecione Lawnchair e ative Usar Lawnchair.</string>
     <string name="dt2s_warning_open_settings">Abrir Definições</string>
     <string name="loading">Carregando…</string>
