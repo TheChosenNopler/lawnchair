@@ -109,6 +109,10 @@
     <string name="icon_shape_bottom_left">Bottom Left</string>
     <string name="icon_shape_bottom_right">Bottom Right</string>
     <string name="create">Create</string>
+    <string name="clipboard">Clipboard</string>
+    <string name="export_to_clipboard">Export to Clipboard</string>
+    <string name="import_from_clipboard">Import from Clipboard</string>
+    <string name="icon_shape_clipboard_import_error">Clipboard does not contain a valid icon shape</string>
 
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
@@ -211,6 +215,10 @@
 
       <string name="reset_custom_icons">Reset Custom Icons</string>
       <string name="reset_custom_icons_confirmation">All custom icons will be reset. Do you want to continue?</string>
+
+    <string name="home_screen_text_color">Text Color</string>
+    <string name="color_light">Light</string>
+    <string name="color_dark">Dark</string>
 
     <!-- <string name="widget_button_text" /> (unknown source)-->
       <string name="force_rounded_widgets">Rounded Corners</string>
