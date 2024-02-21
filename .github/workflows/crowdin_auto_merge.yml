@@ -19,7 +19,7 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: 19
-      - uses: gradle/gradle-build-action@v2
+      - uses: gradle/gradle-build-action@v3
       - name: Write sign info
         if: github.repository == 'LawnchairLauncher/lawnchair'
         run: |
