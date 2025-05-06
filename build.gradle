@@ -111,7 +111,7 @@ ext {
     accompanist_version = '0.27.1'
     libsu_version = '5.0.3'
     protocVersion = '3.21.9'
-    room_version = '2.4.3'
+    room_version = '2.7.1'
     optoVersion = "1.0.18"
 }
 
